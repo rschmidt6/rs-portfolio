@@ -1,4 +1,5 @@
 import { Github, Linkedin, Mail, FileText } from "lucide-react";
+import GradientImage from "./layout/GradientImage";
 
 const Portfolio = () => {
   return (
@@ -11,7 +12,13 @@ const Portfolio = () => {
             <h1 className="text-5xl font-bold text-stone-100 mb-4">
               Your Name
             </h1>
+
             <h2 className="text-xl text-stone-300 mb-6">Frontend Developer</h2>
+            <GradientImage
+              src="portrait.jpg"
+              alt="Description of image"
+              className="w-40 h-64 rounded-lg" // Adjust size and styling as needed
+            />
             <p className="text-stone-400 text-lg">
               With a deep passion for programming and a diverse portfolio of
               innovative and self-driven projects.
@@ -78,6 +85,41 @@ const Portfolio = () => {
           {/* About Section */}
           <section>
             <h2 className="text-2xl font-bold mb-4 text-stone-100">About</h2>
+            <p className="text-stone-400 text-lg leading-relaxed">
+              Your introduction goes here. Write about your passion for
+              development, what drives you, and what you're looking for in your
+              next role.
+            </p>
+            <p className="text-stone-400 text-lg leading-relaxed">
+              Your introduction goes here. Write about your passion for
+              development, what drives you, and what you're looking for in your
+              next role.
+            </p>
+            <p className="text-stone-400 text-lg leading-relaxed">
+              Your introduction goes here. Write about your passion for
+              development, what drives you, and what you're looking for in your
+              next role.
+            </p>
+            <p className="text-stone-400 text-lg leading-relaxed">
+              Your introduction goes here. Write about your passion for
+              development, what drives you, and what you're looking for in your
+              next role.
+            </p>
+            <p className="text-stone-400 text-lg leading-relaxed">
+              Your introduction goes here. Write about your passion for
+              development, what drives you, and what you're looking for in your
+              next role.
+            </p>
+            <p className="text-stone-400 text-lg leading-relaxed">
+              Your introduction goes here. Write about your passion for
+              development, what drives you, and what you're looking for in your
+              next role.
+            </p>
+            <p className="text-stone-400 text-lg leading-relaxed">
+              Your introduction goes here. Write about your passion for
+              development, what drives you, and what you're looking for in your
+              next role.
+            </p>
             <p className="text-stone-400 text-lg leading-relaxed">
               Your introduction goes here. Write about your passion for
               development, what drives you, and what you're looking for in your
