@@ -1,40 +1,55 @@
 import { Github, Linkedin, Mail, FileText } from "lucide-react";
 import GradientImage from "./layout/GradientImage";
+import TypingText from "./layout/TypingText";
 
 const Portfolio = () => {
   return (
-    <div className="min-h-screen p-8 max-w-7xl mx-auto">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-        {/* Left Column - Personal Info */}
-        <div className="space-y-8">
-          {/* Profile */}
+    <div className="min-h-screen flex flex-col lg:flex-row justify-center mt-8 lg:mt-24">
+      {/* Left Column */}
+      <div
+        className="ww-full max-w-[380px] mx-auto lg:mx-0 px-4 sm:px-6 lg:px-0 
+                  lg:fixed lg:left-[calc(50%-510px)]"
+      >
+        {/* Main Content */}
+        <div className="space-y-8 lg:h-full lg:flex lg:flex-col">
+          {/* Top section with name and intro */}
           <div>
-            <h1 className="text-5xl font-bold text-stone-100 mb-4">
-              Your Name
+            <h1 className="text-4xl sm:text-5xl font-[700] text-stone-100 pb-1">
+              Ryan Schmidt
             </h1>
-
-            <h2 className="text-xl text-stone-300 mb-6">Frontend Developer</h2>
-            <GradientImage
-              src="portrait.jpg"
-              alt="Description of image"
-              className="w-40 h-64 rounded-lg" // Adjust size and styling as needed
-            />
-            <p className="text-stone-400 text-lg">
-              With a deep passion for programming and a diverse portfolio of
-              innovative and self-driven projects.
-            </p>
+            <h2 className="text-xl font-[400] lg:text-xl text-stone-400 pb-3">
+              Frontend Developer
+            </h2>
+            <TypingText />
           </div>
 
           {/* Tech Stack */}
-          <div>
-            <h2 className="text-lg font-semibold text-stone-200 mb-4">
-              Tech Stack
-            </h2>
-            <div className="flex flex-wrap gap-2">
-              {["React", "TypeScript", "Tailwind", "Node.js"].map((tech) => (
+          <div className="pb-8">
+            <h2 className="text-lg  text-stone-200 mb-2">Tech Stack</h2>
+            <div className="flex flex-wrap font-bold gap-2 mb-2">
+              {["TypeScript", "React", "Angular"].map((tech) => (
                 <span
                   key={tech}
-                  className="px-3 py-1 bg-stone-800/50 backdrop-blur-sm rounded-full text-stone-300"
+                  className="px-3 py-1 bg-stone-700/40 backdrop-blur-sm rounded-md text-stone-300"
+                >
+                  {tech}
+                </span>
+              ))}
+            </div>
+            <div className="flex text-sm flex-wrap gap-2 max-w-64">
+              {[
+                "Tailwind",
+                "HTML",
+                "CSS",
+                "Node.js",
+                "Webpack",
+                "Mapbox",
+                "React Query",
+                "Context API",
+              ].map((tech) => (
+                <span
+                  key={tech}
+                  className="px-3 py-1 bg-stone-700/25 backdrop-blur-sm rounded-md text-stone-300"
                 >
                   {tech}
                 </span>
@@ -42,89 +57,107 @@ const Portfolio = () => {
             </div>
           </div>
 
-          {/* Links */}
-          <div>
-            <h2 className="text-lg font-semibold text-stone-200 mb-4">
-              Connect
-            </h2>
-            <div className="flex flex-col space-y-3">
-              <a
-                href="#"
-                className="flex items-center gap-2 text-stone-400 hover:text-stone-200 transition-colors"
-              >
-                <Github size={20} />
-                <span>GitHub</span>
-              </a>
-              <a
-                href="#"
-                className="flex items-center gap-2 text-stone-400 hover:text-stone-200 transition-colors"
-              >
-                <Linkedin size={20} />
-                <span>LinkedIn</span>
-              </a>
-              <a
-                href="#"
-                className="flex items-center gap-2 text-stone-400 hover:text-stone-200 transition-colors"
-              >
-                <Mail size={20} />
-                <span>Email</span>
-              </a>
-              <a
-                href="#"
-                className="flex items-center gap-2 text-stone-400 hover:text-stone-200 transition-colors"
-              >
-                <FileText size={20} />
-                <span>Resume</span>
-              </a>
+          {/* Bottom section with photo and links - using margin-top: auto to push to bottom */}
+          <div className="lg:mt-auto flex flex-col sm:flex-row gap-8 items-start">
+            {/* Profile Image */}
+            <GradientImage
+              src="portrait.jpg"
+              alt="ryan"
+              className="w-32 h-48 rounded-md object-cover"
+            />
+
+            {/* Links */}
+            <div>
+              <div className="flex flex-col space-y-3 pt-7">
+                <a
+                  href="#"
+                  className="flex items-center gap-2 text-stone-400 hover:text-stone-200 transition-colors"
+                >
+                  <Github size={20} />
+                  <span>GitHub</span>
+                </a>
+                <a
+                  href="#"
+                  className="flex items-center gap-2 text-stone-400 hover:text-stone-200 transition-colors"
+                >
+                  <Linkedin size={20} />
+                  <span>LinkedIn</span>
+                </a>
+                <a
+                  href="#"
+                  className="flex items-center gap-2 text-stone-400 hover:text-stone-200 transition-colors"
+                >
+                  <Mail size={20} />
+                  <span>Email</span>
+                </a>
+                <a
+                  href="#"
+                  className="flex items-center gap-2 text-stone-400 hover:text-stone-200 transition-colors"
+                >
+                  <FileText size={20} />
+                  <span>Resume</span>
+                </a>
+              </div>
             </div>
           </div>
         </div>
+      </div>
 
-        {/* Right Column - Content */}
-        <div className="space-y-12">
+      {/* Gap spacer - Only visible on desktop */}
+      <div className="hidden lg:block w-[40px]" />
+
+      {/* Right Column with scroll fade */}
+      <div
+        className="w-full max-w-[600px] mx-auto lg:mx-0 px-4 sm:px-6 lg:px-0
+                  lg:ml-[420px]"
+      >
+        {/* Content */}
+        <div className="max-w-xl lg:max-w-xl space-y-12">
           {/* About Section */}
           <section>
             <h2 className="text-2xl font-bold mb-4 text-stone-100">About</h2>
-            <p className="text-stone-400 text-lg leading-relaxed">
-              Your introduction goes here. Write about your passion for
-              development, what drives you, and what you're looking for in your
-              next role.
-            </p>
-            <p className="text-stone-400 text-lg leading-relaxed">
-              Your introduction goes here. Write about your passion for
-              development, what drives you, and what you're looking for in your
-              next role.
-            </p>
-            <p className="text-stone-400 text-lg leading-relaxed">
-              Your introduction goes here. Write about your passion for
-              development, what drives you, and what you're looking for in your
-              next role.
-            </p>
-            <p className="text-stone-400 text-lg leading-relaxed">
-              Your introduction goes here. Write about your passion for
-              development, what drives you, and what you're looking for in your
-              next role.
-            </p>
-            <p className="text-stone-400 text-lg leading-relaxed">
-              Your introduction goes here. Write about your passion for
-              development, what drives you, and what you're looking for in your
-              next role.
-            </p>
-            <p className="text-stone-400 text-lg leading-relaxed">
-              Your introduction goes here. Write about your passion for
-              development, what drives you, and what you're looking for in your
-              next role.
-            </p>
-            <p className="text-stone-400 text-lg leading-relaxed">
-              Your introduction goes here. Write about your passion for
-              development, what drives you, and what you're looking for in your
-              next role.
-            </p>
-            <p className="text-stone-400 text-lg leading-relaxed">
-              Your introduction goes here. Write about your passion for
-              development, what drives you, and what you're looking for in your
-              next role.
-            </p>
+            <div className="space-y-4">
+              <p className="text-stone-400 text-base lg:text-lg leading-relaxed">
+                Your introduction goes here. Write about your passion for
+                development, what drives you, and what you're looking for in
+                your next role.
+              </p>
+              <p className="text-stone-400 text-base lg:text-lg leading-relaxed">
+                Your introduction goes here. Write about your passion for
+                development, what drives you, and what you're looking for in
+                your next role.
+              </p>
+              <p className="text-stone-400 text-base lg:text-lg leading-relaxed">
+                Your introduction goes here. Write about your passion for
+                development, what drives you, and what you're looking for in
+                your next role.
+              </p>
+              <p className="text-stone-400 text-base lg:text-lg leading-relaxed">
+                Your introduction goes here. Write about your passion for
+                development, what drives you, and what you're looking for in
+                your next role.
+              </p>
+              <p className="text-stone-400 text-base lg:text-lg leading-relaxed">
+                Your introduction goes here. Write about your passion for
+                development, what drives you, and what you're looking for in
+                your next role.
+              </p>
+              <p className="text-stone-400 text-base lg:text-lg leading-relaxed">
+                Your introduction goes here. Write about your passion for
+                development, what drives you, and what you're looking for in
+                your next role.
+              </p>
+              <p className="text-stone-400 text-base lg:text-lg leading-relaxed">
+                Your introduction goes here. Write about your passion for
+                development, what drives you, and what you're looking for in
+                your next role.
+              </p>
+              <p className="text-stone-400 text-base lg:text-lg leading-relaxed">
+                Your introduction goes here. Write about your passion for
+                development, what drives you, and what you're looking for in
+                your next role.
+              </p>
+            </div>
           </section>
 
           {/* Projects */}
@@ -167,7 +200,7 @@ const Portfolio = () => {
           </section>
 
           {/* Work Experience */}
-          <section>
+          <section className="mb-12">
             <h2 className="text-2xl font-bold mb-6 text-stone-100">
               Experience
             </h2>

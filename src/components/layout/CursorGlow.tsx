@@ -34,7 +34,7 @@ const CursorGlow = () => {
       animate={{
         background: `radial-gradient(
           800px circle at ${mousePosition.x}px ${mousePosition.y}px, 
-          rgba(255,176,102,0.02),  /* Warmer orange color with slightly increased opacity */
+          rgba(255,176,102,0.025),  /* Warmer orange color with slightly increased opacity */
           transparent 60%           /* Fade to transparent at 60% of the radius */
         )`,
       }}
