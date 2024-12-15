@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, FileText } from "lucide-react";
+import { Github, Linkedin, Mail, FileText, MapPin } from "lucide-react";
 import GradientImage from "./layout/GradientImage";
 import TypingText from "./layout/TypingText";
 
@@ -17,8 +17,11 @@ const Portfolio = () => {
             <h1 className="text-4xl sm:text-5xl font-[700] text-stone-100 pb-1">
               Ryan Schmidt
             </h1>
-            <h2 className="text-xl font-[400] lg:text-xl text-stone-400 pb-3">
+            <h2 className="text-xl font-[400] lg:text-xl text-stone-400">
               Frontend Developer
+            </h2>
+            <h2 className="text-lg font-[200] lg:text-lg text-stone-400 pb-3 flex items-center gap-1">
+              <MapPin size="18" /> <span>Seattle, WA </span>
             </h2>
             <TypingText />
           </div>
@@ -60,7 +63,7 @@ const Portfolio = () => {
           {/* Bottom section with photo and links - using margin-top: auto to push to bottom */}
           <div className="lg:mt-auto flex flex-col sm:flex-row gap-8 items-start">
             {/* Profile Image */}
-            <GradientImage
+            <img
               src="portrait.jpg"
               alt="ryan"
               className="w-32 h-48 rounded-md object-cover"

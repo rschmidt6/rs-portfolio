@@ -5,7 +5,7 @@ const CursorBlinker = () => {
     blinking: {
       opacity: [0, 0, 1, 1],
       transition: {
-        duration: 1.5``,
+        duration: 1.5,
         repeat: Infinity,
         repeatDelay: 0,
         ease: "linear",
