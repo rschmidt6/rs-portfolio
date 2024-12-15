@@ -1,5 +1,4 @@
 import { Github, Linkedin, Mail, FileText, MapPin } from "lucide-react";
-import GradientImage from "./layout/GradientImage";
 import TypingText from "./layout/TypingText";
 
 const Portfolio = () => {
@@ -7,7 +6,7 @@ const Portfolio = () => {
     <div className="min-h-screen flex flex-col lg:flex-row justify-center mt-8 lg:mt-24">
       {/* Left Column */}
       <div
-        className="ww-full max-w-[380px] mx-auto lg:mx-0 px-4 sm:px-6 lg:px-0 
+        className="ww-full max-w-[380px] mx-8 lg:mx-0 sm:px-6 lg:px-0 
                   lg:fixed lg:left-[calc(50%-510px)]"
       >
         {/* Main Content */}
@@ -116,57 +115,145 @@ const Portfolio = () => {
       >
         {/* Content */}
         <div className="max-w-xl lg:max-w-xl space-y-12">
+          {/* Work Experience */}
+          <section className="mb-12">
+            <h2 className="text-2xl font-bold mb-6 text-stone-100">
+              Experience
+            </h2>
+            <div className="space-y-6">
+              {/* GM Position */}
+              <div className="">
+                <h3 className="text-xl font-semibold text-stone-100">
+                  Senior Front End Developer
+                </h3>
+                <p className="text-stone-400 mt-1">
+                  General Motors • June 2017 - Sept 2024 (7 Years)
+                </p>
+                <p className="text-stone-400 mt-4">
+                  Built and maintained enterprise web applications used by 500+
+                  engineers daily. Specialized in geospatial visualization and
+                  data processing systems.
+                </p>
+
+                <div className="mt-6">
+                  <h4 className="text-stone-200 font-medium mb-2">
+                    Technical Projects
+                  </h4>
+                  <ul className="space-y-2 text-stone-400">
+                    <li>
+                      • Created real-time analytics dashboard with React,
+                      Mapbox, and D3.js
+                    </li>
+                    <li>
+                      • Built mapping platform with React and Mapbox GL for
+                      processing complex geospatial data
+                    </li>
+                    <li>
+                      • Engineered internal file sharing system utilizing cloud
+                      storage with AWS S3
+                    </li>
+                    <li>
+                      • Developed reusable mapping components used across
+                      multiple internal applications
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="mt-6">
+                  <h4 className="text-stone-200 font-medium mb-2">
+                    Architecture & Performance
+                  </h4>
+                  <ul className="space-y-2 text-stone-400">
+                    <li>
+                      • Integrated REST APIs connecting to 10+ backend services
+                    </li>
+                    <li>
+                      • Led team migration from Angular to React architecture
+                    </li>
+                    <li>
+                      • Utilized memoization to increase app
+                      performance/efficiency
+                    </li>
+                    <li>
+                      • Reduced application load times through React code
+                      splitting and modern optimization techniques
+                    </li>
+                    <li>
+                      • Built shared component library and custom hooks for
+                      consistent state management
+                    </li>
+                    <li>
+                      • Reduced bugs by implementing comprehensive React Testing
+                      Library coverage
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="mt-6">
+                  <h4 className="text-stone-200 font-medium mb-2">
+                    Team Impact & Leadership
+                  </h4>
+                  <ul className="space-y-2 text-stone-400">
+                    <li>
+                      • Mentored junior developers in React best practices and
+                      testing patterns
+                    </li>
+                    <li>
+                      • Created shared state management patterns with Context
+                      API to improve team collaboration
+                    </li>
+                    <li>
+                      • Worked closely with UX designer to optimize user
+                      workflow
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              {/* SWRI Position */}
+              <div className="">
+                <h3 className="text-xl font-semibold text-stone-100">
+                  Data Analyst Intern
+                </h3>
+                <p className="text-stone-400 mt-1">
+                  Southwest Research Institute • June 2016 - Sept 2016
+                </p>
+                <ul className="mt-4 space-y-2 text-stone-400">
+                  <li>
+                    • Implemented security improvements in C#/.NET applications
+                  </li>
+                  <li>
+                    • Developed ASP.NET web forms with focus on UI/UX and
+                    performance
+                  </li>
+                  <li>
+                    • Conducted technical requirements gathering and stakeholder
+                    interviews
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
           {/* About Section */}
-          <section>
+          <section className="pb-20">
             <h2 className="text-2xl font-bold mb-4 text-stone-100">About</h2>
             <div className="space-y-4">
               <p className="text-stone-400 text-base lg:text-lg leading-relaxed">
-                Your introduction goes here. Write about your passion for
-                development, what drives you, and what you're looking for in
-                your next role.
+                Frontend developer with over 7 years of experience building web
+                applications, with a focus on React and data visualization.
               </p>
               <p className="text-stone-400 text-base lg:text-lg leading-relaxed">
-                Your introduction goes here. Write about your passion for
-                development, what drives you, and what you're looking for in
-                your next role.
-              </p>
-              <p className="text-stone-400 text-base lg:text-lg leading-relaxed">
-                Your introduction goes here. Write about your passion for
-                development, what drives you, and what you're looking for in
-                your next role.
-              </p>
-              <p className="text-stone-400 text-base lg:text-lg leading-relaxed">
-                Your introduction goes here. Write about your passion for
-                development, what drives you, and what you're looking for in
-                your next role.
-              </p>
-              <p className="text-stone-400 text-base lg:text-lg leading-relaxed">
-                Your introduction goes here. Write about your passion for
-                development, what drives you, and what you're looking for in
-                your next role.
-              </p>
-              <p className="text-stone-400 text-base lg:text-lg leading-relaxed">
-                Your introduction goes here. Write about your passion for
-                development, what drives you, and what you're looking for in
-                your next role.
-              </p>
-              <p className="text-stone-400 text-base lg:text-lg leading-relaxed">
-                Your introduction goes here. Write about your passion for
-                development, what drives you, and what you're looking for in
-                your next role.
-              </p>
-              <p className="text-stone-400 text-base lg:text-lg leading-relaxed">
-                Your introduction goes here. Write about your passion for
-                development, what drives you, and what you're looking for in
-                your next role.
+                New to Seattle and enjoying the beautiful PNW. In my free time,
+                I like to rock climb, hike, drink coffee, and peruse the local
+                vintage and antique shops.
               </p>
             </div>
           </section>
 
           {/* Projects */}
-          <section>
+          {/* <section>
             <h2 className="text-2xl font-bold mb-6 text-stone-100">Projects</h2>
-            <div className="space-y-6">
+            <div className="space-y-6">`
               <div className="bg-stone-900/50 backdrop-blur-sm p-6 rounded-lg">
                 <h3 className="text-xl font-semibold text-stone-100">
                   Project Name
@@ -200,29 +287,7 @@ const Portfolio = () => {
                 </div>
               </div>
             </div>
-          </section>
-
-          {/* Work Experience */}
-          <section className="mb-12">
-            <h2 className="text-2xl font-bold mb-6 text-stone-100">
-              Experience
-            </h2>
-            <div className="space-y-6">
-              <div className="bg-stone-900/50 backdrop-blur-sm p-6 rounded-lg">
-                <h3 className="text-xl font-semibold text-stone-100">
-                  Senior Frontend Developer
-                </h3>
-                <p className="text-stone-400 mt-1">
-                  Company Name • 2020 - Present
-                </p>
-                <ul className="mt-4 space-y-2 text-stone-400">
-                  <li>• Accomplishment or responsibility 1</li>
-                  <li>• Accomplishment or responsibility 2</li>
-                  <li>• Accomplishment or responsibility 3</li>
-                </ul>
-              </div>
-            </div>
-          </section>
+          </section> */}
         </div>
       </div>
     </div>
