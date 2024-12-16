@@ -1,5 +1,6 @@
 import { Github, Linkedin, Mail, FileText, MapPin } from "lucide-react";
 import TypingText from "./layout/TypingText";
+import EmailButton from "./ui/EmailButton";
 
 const Portfolio = () => {
   return (
@@ -43,7 +44,7 @@ const Portfolio = () => {
                 "Tailwind",
                 "HTML",
                 "CSS",
-                "Node.js",
+                "REST",
                 "Webpack",
                 "Mapbox",
                 "React Query",
@@ -74,28 +75,31 @@ const Portfolio = () => {
             <div>
               <div className="flex flex-col space-y-3 pt-7">
                 <a
-                  href="#"
+                  href="https://github.com/rschmidt6"
                   className="flex items-center gap-2 text-stone-400 hover:text-stone-200 transition-colors"
                 >
                   <Github size={20} />
                   <span>GitHub</span>
                 </a>
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/in/rdschmidt88/"
                   className="flex items-center gap-2 text-stone-400 hover:text-stone-200 transition-colors"
                 >
                   <Linkedin size={20} />
                   <span>LinkedIn</span>
                 </a>
-                <a
-                  href="#"
+                {/* <a
+                  href="mailto:rdschmidt88@gmail.com"
                   className="flex items-center gap-2 text-stone-400 hover:text-stone-200 transition-colors"
                 >
                   <Mail size={20} />
                   <span>Email</span>
-                </a>
+                </a> */}
+                <EmailButton />
                 <a
-                  href="#"
+                  href="/resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex items-center gap-2 text-stone-400 hover:text-stone-200 transition-colors"
                 >
                   <FileText size={20} />
