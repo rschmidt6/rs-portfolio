@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, FileText, MapPin } from "lucide-react";
+import { Github, Linkedin, FileText, MapPin } from "lucide-react";
 import TypingText from "./layout/TypingText";
 import EmailButton from "./ui/EmailButton";
 
