@@ -13,7 +13,7 @@ const Portfolio = () => {
         <div className="space-y-8 lg:h-full lg:flex lg:flex-col">
           {/* Top section with name and intro */}
           <div>
-            <h1 className="text-4xl sm:text-5xl font-[700] text-stone-100 pb-1">
+            <h1 className="text-4xl sm:text-5xl font-[700] text-stone-100 pb-2">
               Ryan Schmidt
             </h1>
             <h2 className="text-xl font-[400] lg:text-xl text-stone-400">
@@ -60,13 +60,15 @@ const Portfolio = () => {
           </div>
 
           {/* Bottom section with photo and links - using margin-top: auto to push to bottom */}
-          <div className="lg:mt-auto flex flex-col sm:flex-row gap-8 items-start">
+          <div className=" flex flex-row gap-8 items-start pb-12">
             {/* Profile Image */}
-            <img
-              src="portrait.jpg"
-              alt="ryan"
-              className="w-32 h-48 rounded-md object-cover"
-            />
+            <div>
+              <img
+                src="portrait.jpg"
+                alt="ryan"
+                className="w-32 h-48 rounded-md object-cover"
+              />
+            </div>
 
             {/* Links */}
             <div>
@@ -149,7 +151,7 @@ const Portfolio = () => {
                       processing complex geospatial data
                     </li>
                     <li>
-                      • Engineered internal file sharing system utilizing cloud
+                      • Engineered internal file sharing system using cloud
                       storage with AWS S3
                     </li>
                     <li>
@@ -235,19 +237,27 @@ const Portfolio = () => {
             </div>
           </section>
           {/* About Section */}
-          <section className="pb-20">
+          <section>
             <h2 className="text-2xl font-bold mb-4 text-stone-100">About</h2>
             <div className="space-y-4">
-              <p className="text-stone-400 text-base lg:text-lg leading-relaxed">
+              <p className="text-stone-400 leading-relaxed font-[600]">
                 Frontend developer with over 7 years of experience building web
-                applications, with a focus on React and data visualization.
+                applications, with a current focus on React and data
+                visualization.
               </p>
-              <p className="text-stone-400 text-base lg:text-lg leading-relaxed">
-                New to Seattle and enjoying the beautiful PNW. In my free time,
-                I like to rock climb, hike, drink coffee, and peruse the local
-                vintage and antique shops.
+              <p className="text-stone-400 leading-relaxed font-[600]">
+                New to Seattle, and enjoying the beautiful PNW. In my free time,
+                I like to rock climb, drink coffee, and peruse the local vintage
+                and antique shops.
+              </p>
+              <p className="text-stone-400 leading-relaxed font-[600]">
+                Would love to connect about any opportunities, feel free to
+                reach out directly over email or Linkedin!
               </p>
             </div>
+          </section>
+          <section className="pb-20 text-stone-600 text-sm font-[200]">
+            <p>This site built with React, Tailwind, Framer Motion</p>
           </section>
 
           {/* Projects */}
