@@ -240,6 +240,56 @@ const Portfolio = () => {
               </div>
             </div>
           </section>
+          {/* Projects */}
+          <section>
+            <h2 className="text-2xl font-bold mb-6 text-stone-100">Projects</h2>
+            <div className="space-y-6">
+              <div className="bg-stone-900/80 backdrop-blur-sm p-6 rounded-lg">
+                <h3 className="text-xl font-semibold text-stone-100">
+                  Ghibli Generator
+                </h3>
+                <p className="text-stone-400 mt-2">
+                  A web app that generates random Studio Ghibli content
+                  including films, characters, locations and vehicles. Built
+                  with React, Vite and the Ghibli API, featuring smooth
+                  animations and responsive design. I really just wanted to make
+                  a nice Ghibli theme and practice design.
+                </p>
+                <div className="mt-4 flex flex-wrap gap-2">
+                  <span className="px-2 py-1 bg-stone-800/50 backdrop-blur-sm rounded text-sm text-stone-300">
+                    React
+                  </span>
+                  <span className="px-2 py-1 bg-stone-800/50 backdrop-blur-sm rounded text-sm text-stone-300">
+                    Vite
+                  </span>
+                  <span className="px-2 py-1 bg-stone-800/50 backdrop-blur-sm rounded text-sm text-stone-300">
+                    Tailwind
+                  </span>
+                  <span className="px-2 py-1 bg-stone-800/50 backdrop-blur-sm rounded text-sm text-stone-300">
+                    Framer Motion
+                  </span>
+                  <span className="px-2 py-1 bg-stone-800/50 backdrop-blur-sm rounded text-sm text-stone-300">
+                    React Query
+                  </span>
+                </div>
+                <div className="mt-4 flex gap-4">
+                  <a
+                    href="https://github.com/rschmidt6/ghibli-generator"
+                    className="text-stone-300 hover:text-stone-100 flex items-center gap-1 transition-colors"
+                  >
+                    <Github size={16} />
+                    <span>Code</span>
+                  </a>
+                  <a
+                    href="https://ghibli-generator.vercel.app/"
+                    className="text-stone-300 hover:text-stone-100 transition-colors"
+                  >
+                    Live Demo →
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
           {/* About Section */}
           <section>
             <h2 className="text-2xl font-bold mb-4 text-stone-100">About</h2>
@@ -263,45 +313,6 @@ const Portfolio = () => {
           <section className="pb-20 text-stone-600 text-sm font-[200]">
             <p>This site built with React, Tailwind, Framer Motion</p>
           </section>
-
-          {/* Projects */}
-          {/* <section>
-            <h2 className="text-2xl font-bold mb-6 text-stone-100">Projects</h2>
-            <div className="space-y-6">`
-              <div className="bg-stone-900/50 backdrop-blur-sm p-6 rounded-lg">
-                <h3 className="text-xl font-semibold text-stone-100">
-                  Project Name
-                </h3>
-                <p className="text-stone-400 mt-2">
-                  Brief project description that highlights the key features and
-                  technologies used.
-                </p>
-                <div className="mt-4 flex flex-wrap gap-2">
-                  <span className="px-2 py-1 bg-stone-800/50 backdrop-blur-sm rounded text-sm text-stone-300">
-                    React
-                  </span>
-                  <span className="px-2 py-1 bg-stone-800/50 backdrop-blur-sm rounded text-sm text-stone-300">
-                    TypeScript
-                  </span>
-                </div>
-                <div className="mt-4 flex gap-4">
-                  <a
-                    href="#"
-                    className="text-stone-300 hover:text-stone-100 flex items-center gap-1 transition-colors"
-                  >
-                    <Github size={16} />
-                    <span>Code</span>
-                  </a>
-                  <a
-                    href="#"
-                    className="text-stone-300 hover:text-stone-100 transition-colors"
-                  >
-                    Live Demo →
-                  </a>
-                </div>
-              </div>
-            </div>
-          </section> */}
         </div>
       </div>
     </div>
