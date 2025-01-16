@@ -25,8 +25,7 @@ const Portfolio = () => {
             </h2>
             <TypingText />
           </div>
-
-          {/* Tech Stack */}
+          ˆ{/* Tech Stack */}
           <div className="pb-8">
             <h2 className="text-lg  text-stone-200 mb-2">Tech Stack</h2>
             <div className="flex flex-wrap font-bold gap-2 mb-2">
@@ -59,7 +58,6 @@ const Portfolio = () => {
               ))}
             </div>
           </div>
-
           {/* Bottom section with photo and links - using margin-top: auto to push to bottom */}
           <div className=" flex flex-row gap-8 items-start pb-12">
             {/* Profile Image */}
