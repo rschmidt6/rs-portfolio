@@ -286,6 +286,45 @@ const Portfolio = () => {
                   </a>
                 </div>
               </div>
+              <div className="bg-stone-900/80 backdrop-blur-sm p-6 rounded-lg">
+                <h3 className="text-xl font-semibold text-stone-100">
+                  Ascii Writing Tracker
+                </h3>
+                <p className="text-stone-400 mt-2">
+                  I will admit not the most complex app, but I wanted to quickly
+                  make a really simple way to track my daily writing goal of 500
+                  words and then auto-date and format it and export as as a .txt
+                  for easy organization. I thought the ascii styling would be a
+                  fun way to make it more interesting and have a unique design,
+                  and I love the way it looks. Not responsive, desktop only.
+                </p>
+                <div className="mt-4 flex flex-wrap gap-2">
+                  <span className="px-2 py-1 bg-stone-800/50 backdrop-blur-sm rounded text-sm text-stone-300">
+                    React
+                  </span>
+                  <span className="px-2 py-1 bg-stone-800/50 backdrop-blur-sm rounded text-sm text-stone-300">
+                    Vite
+                  </span>
+                  <span className="px-2 py-1 bg-stone-800/50 backdrop-blur-sm rounded text-sm text-stone-300">
+                    Tailwind
+                  </span>
+                </div>
+                <div className="mt-4 flex gap-4">
+                  <a
+                    href="https://github.com/rschmidt6/ascii-writing-tracker"
+                    className="text-stone-300 hover:text-stone-100 flex items-center gap-1 transition-colors"
+                  >
+                    <Github size={16} />
+                    <span>Code</span>
+                  </a>
+                  <a
+                    href="https://ascii-writing-tracker.vercel.app/"
+                    className="text-stone-300 hover:text-stone-100 transition-colors"
+                  >
+                    Live Demo →
+                  </a>
+                </div>
+              </div>
             </div>
           </section>
           {/* About Section */}
