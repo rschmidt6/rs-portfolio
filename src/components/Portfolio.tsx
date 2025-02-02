@@ -1,6 +1,7 @@
 import { Github, Linkedin, FileText, MapPin } from "lucide-react";
 import TypingText from "./layout/TypingText";
 import EmailButton from "./ui/EmailButton";
+import Project from "./sections/Project";
 
 const Portfolio = () => {
   return (
@@ -242,89 +243,35 @@ const Portfolio = () => {
           <section>
             <h2 className="text-2xl font-bold mb-6 text-stone-100">Projects</h2>
             <div className="space-y-6">
-              <div className="bg-stone-900/80 backdrop-blur-sm p-6 rounded-lg">
-                <h3 className="text-xl font-semibold text-stone-100">
-                  Ghibli Generator
-                </h3>
-                <p className="text-stone-400 mt-2">
-                  A web app that generates random Studio Ghibli content
+              <Project
+                title="Ghibli Generator"
+                webLink="https://ghibli-generator.vercel.app/"
+                githubLink="https://github.com/rschmidt6/ghibli-generator"
+                technologies={[
+                  "React",
+                  "Vite",
+                  "Tailwind",
+                  "Framer Motion",
+                  "React Query",
+                ]}
+                description="A web app that generates random Studio Ghibli content
                   including films, characters, locations and vehicles. Built
                   with React, Vite and the Ghibli API, featuring smooth
                   animations and responsive design. I really just wanted to make
-                  a nice Ghibli theme and practice design.
-                </p>
-                <div className="mt-4 flex flex-wrap gap-2">
-                  <span className="px-2 py-1 bg-stone-800/50 backdrop-blur-sm rounded text-sm text-stone-300">
-                    React
-                  </span>
-                  <span className="px-2 py-1 bg-stone-800/50 backdrop-blur-sm rounded text-sm text-stone-300">
-                    Vite
-                  </span>
-                  <span className="px-2 py-1 bg-stone-800/50 backdrop-blur-sm rounded text-sm text-stone-300">
-                    Tailwind
-                  </span>
-                  <span className="px-2 py-1 bg-stone-800/50 backdrop-blur-sm rounded text-sm text-stone-300">
-                    Framer Motion
-                  </span>
-                  <span className="px-2 py-1 bg-stone-800/50 backdrop-blur-sm rounded text-sm text-stone-300">
-                    React Query
-                  </span>
-                </div>
-                <div className="mt-4 flex gap-4">
-                  <a
-                    href="https://github.com/rschmidt6/ghibli-generator"
-                    className="text-stone-300 hover:text-stone-100 flex items-center gap-1 transition-colors"
-                  >
-                    <Github size={16} />
-                    <span>Code</span>
-                  </a>
-                  <a
-                    href="https://ghibli-generator.vercel.app/"
-                    className="text-stone-300 hover:text-stone-100 transition-colors"
-                  >
-                    Live Demo →
-                  </a>
-                </div>
-              </div>
-              <div className="bg-stone-900/80 backdrop-blur-sm p-6 rounded-lg">
-                <h3 className="text-xl font-semibold text-stone-100">
-                  Ascii Writing Tracker
-                </h3>
-                <p className="text-stone-400 mt-2">
-                  I will admit not the most complex app, but I wanted to quickly
+                  a nice Ghibli theme and practice design."
+              />
+              <Project
+                title="Ascii Writing Tracker"
+                webLink="https://ascii-writing-tracker.vercel.app/"
+                githubLink="https://github.com/rschmidt6/ascii-writing-tracker"
+                technologies={["React", "Vite", "Tailwind"]}
+                description="I will admit not the most complex app, but I wanted to quickly
                   make a really simple way to track my daily writing goal of 500
                   words and then auto-date and format it and export as as a .txt
                   for easy organization. I thought the ascii styling would be a
                   fun way to make it more interesting and have a unique design,
-                  and I love the way it looks. Not responsive, desktop only.
-                </p>
-                <div className="mt-4 flex flex-wrap gap-2">
-                  <span className="px-2 py-1 bg-stone-800/50 backdrop-blur-sm rounded text-sm text-stone-300">
-                    React
-                  </span>
-                  <span className="px-2 py-1 bg-stone-800/50 backdrop-blur-sm rounded text-sm text-stone-300">
-                    Vite
-                  </span>
-                  <span className="px-2 py-1 bg-stone-800/50 backdrop-blur-sm rounded text-sm text-stone-300">
-                    Tailwind
-                  </span>
-                </div>
-                <div className="mt-4 flex gap-4">
-                  <a
-                    href="https://github.com/rschmidt6/ascii-writing-tracker"
-                    className="text-stone-300 hover:text-stone-100 flex items-center gap-1 transition-colors"
-                  >
-                    <Github size={16} />
-                    <span>Code</span>
-                  </a>
-                  <a
-                    href="https://ascii-writing-tracker.vercel.app/"
-                    className="text-stone-300 hover:text-stone-100 transition-colors"
-                  >
-                    Live Demo →
-                  </a>
-                </div>
-              </div>
+                  and I love the way it looks. Not responsive, desktop only."
+              />
             </div>
           </section>
           {/* About Section */}
