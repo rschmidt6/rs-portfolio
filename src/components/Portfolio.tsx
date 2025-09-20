@@ -19,7 +19,10 @@ const Portfolio = () => {
               Ryan Schmidt
             </h1>
             <h2 className="text-xl font-[400] lg:text-xl text-stone-400">
-              Frontend Developer
+              Data Analyst
+            </h2>
+            <h2 className="text-md font-[400] lg:text-md text-stone-500 pb-2">
+              Software Engineering Background
             </h2>
             <h2 className="text-lg font-[200] lg:text-lg text-stone-400 pb-3 flex items-center gap-1">
               <MapPin size="18" /> <span>Seattle, WA </span>
@@ -30,7 +33,7 @@ const Portfolio = () => {
           <div className="pb-8">
             <h2 className="text-lg  text-stone-200 mb-2">Tech Stack</h2>
             <div className="flex flex-wrap font-bold gap-2 mb-2">
-              {["TypeScript", "React", "Angular"].map((tech) => (
+              {["SQL", "Excel", "Data Visualization"].map((tech) => (
                 <span
                   key={tech}
                   className="px-3 py-1 bg-stone-700/40 backdrop-blur-sm rounded-md text-stone-300"
@@ -41,14 +44,13 @@ const Portfolio = () => {
             </div>
             <div className="flex text-sm flex-wrap gap-2 max-w-64">
               {[
-                "Tailwind",
-                "HTML",
-                "CSS",
-                "REST",
-                "Webpack",
-                "Mapbox",
-                "React Query",
-                "Context API",
+                "Google Sheets",
+                "JavaScript",
+                "Tableau",
+                "Python",
+                "React",
+                "R",
+                "Git",
               ].map((tech) => (
                 <span
                   key={tech}
@@ -129,90 +131,61 @@ const Portfolio = () => {
               {/* GM Position */}
               <div className="">
                 <h3 className="text-xl font-semibold text-stone-100">
-                  Senior Front End Developer
+                  Senior Developer
                 </h3>
                 <p className="text-stone-400 mt-1">
                   General Motors • June 2017 - Sept 2024 (7 Years)
                 </p>
                 <p className="text-stone-400 mt-4">
-                  Built and maintained enterprise web applications used by 500+
-                  engineers daily. Specialized in geospatial visualization and
-                  data processing systems.
+                  Built enterprise analytics platforms and data visualization
+                  tools used by 500+ engineers. Collaborated with stakeholders
+                  to translate business requirements into interactive dashboards
+                  and reporting solutions.
                 </p>
 
-                <div className="mt-6">
-                  <h4 className="text-stone-200 font-medium mb-2">
-                    Technical Projects
-                  </h4>
-                  <ul className="space-y-2 text-stone-400">
-                    <li>
-                      • Created real-time analytics dashboard with React,
-                      Mapbox, and D3.js
-                    </li>
-                    <li>
-                      • Built mapping platform with React and Mapbox GL for
-                      processing complex geospatial data
-                    </li>
-                    <li>
-                      • Engineered internal file sharing system using cloud
-                      storage with AWS S3
-                    </li>
-                    <li>
-                      • Developed reusable mapping components used across
-                      multiple internal applications
-                    </li>
-                  </ul>
-                </div>
+                <ul className="mt-4 space-y-2 text-stone-400">
+                  <li>
+                    • Created real-time analytics dashboard using D3.js to track
+                    engineering metrics and KPIs
+                  </li>
+                  <li>
+                    • Built data processing pipeline handling 5TB+ of
+                    engineering data
+                  </li>
+                  <li>
+                    • Replaced manual data workflows with automated dashboard
+                    solutions
+                  </li>
+                  <li>
+                    • Worked with product owners and engineers to define
+                    reporting requirements
+                  </li>
+                </ul>
+              </div>
 
-                <div className="mt-6">
-                  <h4 className="text-stone-200 font-medium mb-2">
-                    Architecture & Performance
-                  </h4>
-                  <ul className="space-y-2 text-stone-400">
-                    <li>
-                      • Integrated REST APIs connecting to 10+ backend services
-                    </li>
-                    <li>
-                      • Led team migration from Angular to React architecture
-                    </li>
-                    <li>
-                      • Utilized memoization to increase app
-                      performance/efficiency
-                    </li>
-                    <li>
-                      • Reduced application load times through React code
-                      splitting and modern optimization techniques
-                    </li>
-                    <li>
-                      • Built shared component library and custom hooks for
-                      consistent state management
-                    </li>
-                    <li>
-                      • Reduced bugs by implementing comprehensive React Testing
-                      Library coverage
-                    </li>
-                  </ul>
-                </div>
+              {/* Microsoft Position */}
+              <div className="">
+                <h3 className="text-xl font-semibold text-stone-100">
+                  UX Software Engineer
+                </h3>
+                <p className="text-stone-400 mt-1">
+                  Microsoft (Via Quadrant Technologies) • March 2025 - July 2025
+                </p>
 
-                <div className="mt-6">
-                  <h4 className="text-stone-200 font-medium mb-2">
-                    Team Impact & Leadership
-                  </h4>
-                  <ul className="space-y-2 text-stone-400">
-                    <li>
-                      • Mentored junior developers in React best practices and
-                      testing patterns
-                    </li>
-                    <li>
-                      • Created shared state management patterns with Context
-                      API to improve team collaboration
-                    </li>
-                    <li>
-                      • Worked closely with UX designer to optimize user
-                      workflow
-                    </li>
-                  </ul>
-                </div>
+                <ul className="mt-4 space-y-2 text-stone-400">
+                  <li>
+                    • Developed user interfaces with React for Microsoft Purview
+                    platform
+                  </li>
+                  <li>
+                    • Gained experience with Microsoft Purview data governance
+                    platform
+                  </li>
+                  <li>
+                    • Collaborated with data teams on requirements and
+                    implementation
+                  </li>
+                </ul>
               </div>
 
               {/* SWRI Position */}
@@ -225,14 +198,11 @@ const Portfolio = () => {
                 </p>
                 <ul className="mt-4 space-y-2 text-stone-400">
                   <li>
-                    • Implemented security improvements in C#/.NET applications
+                    • Developed reporting solutions and data analysis tools in
+                    C#/.NET
                   </li>
                   <li>
-                    • Developed ASP.NET web forms with focus on UI/UX and
-                    performance
-                  </li>
-                  <li>
-                    • Conducted technical requirements gathering and stakeholder
+                    • Conducted requirements gathering through stakeholder
                     interviews
                   </li>
                 </ul>
@@ -243,6 +213,19 @@ const Portfolio = () => {
           <section>
             <h2 className="text-2xl font-bold mb-6 text-stone-100">Projects</h2>
             <div className="space-y-6">
+              <Project
+                title="Used Car Depreciation Analysis"
+                webLink="https://github.com/rschmidt6/Used-Car-Prices-Analysis"
+                webLinkText="See Analysis Markdown"
+                technologies={[
+                  "Google Sheets",
+                  "Pivot Tables",
+                  "Statistical Analysis",
+                  "Data Visualization",
+                  "Business Intelligence",
+                ]}
+                description="Analysis of 50,000 car sales records to identify depreciation patterns across brands, fuel types, and engine sizes. Debunked the 'luxury holds value' myth by showing mass market brands actually retain value better percentage-wise. Built comprehensive pivot tables and calculated depreciation rates to provide actionable buying strategies for consumers and dealers."
+              />
               <Project
                 title="Ghibli Generator"
                 webLink="https://ghibli-generator.vercel.app/"
@@ -279,9 +262,12 @@ const Portfolio = () => {
             <h2 className="text-2xl font-bold mb-4 text-stone-100">About</h2>
             <div className="space-y-4">
               <p className="text-stone-400 leading-relaxed font-[600]">
-                Frontend developer with over 7 years of experience building web
-                applications, with a current focus on React and data
-                visualization.
+                Data Analyst transitioning from 7 years as a frontend developer.
+                After a while building web applications, I realized I was most
+                interested by the data-driven parts of my projects like
+                analyzing user behavior, building out performance metrics, and
+                creating visualizations. Now I'm applying those analytical
+                skills to help businesses make better decisions.
               </p>
               <p className="text-stone-400 leading-relaxed font-[600]">
                 New to Seattle, and enjoying the beautiful PNW. In my free time,

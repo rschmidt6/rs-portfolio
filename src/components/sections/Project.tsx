@@ -4,8 +4,9 @@ interface ProjectProps {
   title: string;
   description: string;
   webLink: string;
-  githubLink: string;
+  githubLink?: string;
   technologies: string[];
+  webLinkText?: string;
 }
 
 function Project({
@@ -14,6 +15,7 @@ function Project({
   webLink,
   githubLink,
   technologies,
+  webLinkText = "Live Demo",
 }: ProjectProps) {
   return (
     <div className="bg-stone-900/80 backdrop-blur-sm p-6 rounded-lg">
@@ -27,18 +29,21 @@ function Project({
         ))}
       </div>
       <div className="mt-4 flex gap-4">
-        <a
-          href={githubLink}
-          className="text-stone-300 hover:text-stone-100 flex items-center gap-1 transition-colors"
-        >
-          <Github size={16} />
-          <span>Code</span>
-        </a>
+        {githubLink && (
+          <a
+            href={githubLink}
+            className="text-stone-300 hover:text-stone-100 flex items-center gap-1 transition-colors"
+          >
+            <Github size={16} />
+            <span>Code</span>
+          </a>
+        )}
+
         <a
           href={webLink}
           className="text-stone-300 hover:text-stone-100 transition-colors"
         >
-          Live Demo →
+          {webLinkText} →
         </a>
       </div>
     </div>
