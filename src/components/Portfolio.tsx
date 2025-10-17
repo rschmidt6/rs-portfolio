@@ -19,21 +19,18 @@ const Portfolio = () => {
               Ryan Schmidt
             </h1>
             <h2 className="text-xl font-[400] lg:text-xl text-stone-400">
-              Data Analyst
-            </h2>
-            <h2 className="text-md font-[400] lg:text-md text-stone-500 pb-2">
-              Software Engineering Background
+              Frontend Developer
             </h2>
             <h2 className="text-lg font-[200] lg:text-lg text-stone-400 pb-3 flex items-center gap-1">
-              <MapPin size="18" /> <span>Seattle, WA </span>
+              <MapPin size="18" /> <span>Seattle, WA / Austin, TX </span>
             </h2>
             <TypingText />
           </div>
-          ˆ{/* Tech Stack */}
+          {/* Tech Stack */}
           <div className="pb-8">
             <h2 className="text-lg  text-stone-200 mb-2">Tech Stack</h2>
             <div className="flex flex-wrap font-bold gap-2 mb-2">
-              {["SQL", "Excel", "Data Visualization"].map((tech) => (
+              {["Angular", "Typescript", "React"].map((tech) => (
                 <span
                   key={tech}
                   className="px-3 py-1 bg-stone-700/40 backdrop-blur-sm rounded-md text-stone-300"
@@ -44,13 +41,13 @@ const Portfolio = () => {
             </div>
             <div className="flex text-sm flex-wrap gap-2 max-w-64">
               {[
-                "Google Sheets",
-                "JavaScript",
-                "Tableau",
-                "Python",
-                "React",
-                "R",
-                "Git",
+                "REST APIs",
+                "HTML/CSS",
+                "RxJS",
+                "Data Visualization",
+                "Mapbox GL",
+                "D3.js",
+                "SQL",
               ].map((tech) => (
                 <span
                   key={tech}
@@ -131,34 +128,34 @@ const Portfolio = () => {
               {/* GM Position */}
               <div className="">
                 <h3 className="text-xl font-semibold text-stone-100">
-                  Senior Developer
+                  Frontend Developer
                 </h3>
                 <p className="text-stone-400 mt-1">
                   General Motors • June 2017 - Sept 2024 (7 Years)
                 </p>
                 <p className="text-stone-400 mt-4">
-                  Built enterprise analytics platforms and data visualization
-                  tools used by 500+ engineers. Collaborated with stakeholders
-                  to translate business requirements into interactive dashboards
-                  and reporting solutions.
+                  Developed enterprise web applications and data visualization
+                  tools serving 500+ engineers. Worked primarily with Angular
+                  before transitioning to React, building mapping platforms and
+                  analytics dashboards.
                 </p>
 
                 <ul className="mt-4 space-y-2 text-stone-400">
                   <li>
-                    • Created real-time analytics dashboard using D3.js to track
-                    engineering metrics and KPIs
+                    • Built mapping visualization platform using Angular and
+                    Mapbox GL for geospatial data
                   </li>
                   <li>
-                    • Built data processing pipeline handling 5TB+ of
-                    engineering data
+                    • Created real-time analytics dashboard with React,
+                    TypeScript, and D3.js
                   </li>
                   <li>
-                    • Replaced manual data workflows with automated dashboard
-                    solutions
+                    • Developed file-sharing application with AWS S3 integration
+                    for internal workflows
                   </li>
                   <li>
-                    • Worked with product owners and engineers to define
-                    reporting requirements
+                    • Collaborated with UX designers and product teams to
+                    implement features
                   </li>
                 </ul>
               </div>
@@ -166,7 +163,7 @@ const Portfolio = () => {
               {/* Microsoft Position */}
               <div className="">
                 <h3 className="text-xl font-semibold text-stone-100">
-                  UX Software Engineer
+                  Frontend Developer
                 </h3>
                 <p className="text-stone-400 mt-1">
                   Microsoft (Via Quadrant Technologies) • March 2025 - July 2025
@@ -174,16 +171,15 @@ const Portfolio = () => {
 
                 <ul className="mt-4 space-y-2 text-stone-400">
                   <li>
-                    • Developed user interfaces with React for Microsoft Purview
-                    platform
+                    • Developed React components for Microsoft Purview data
+                    governance platform
                   </li>
                   <li>
-                    • Gained experience with Microsoft Purview data governance
-                    platform
+                    • Implemented complex UI logic for role-based data access
+                    controls
                   </li>
                   <li>
-                    • Collaborated with data teams on requirements and
-                    implementation
+                    • Collaborated with product teams on feature requirements
                   </li>
                 </ul>
               </div>
@@ -198,8 +194,7 @@ const Portfolio = () => {
                 </p>
                 <ul className="mt-4 space-y-2 text-stone-400">
                   <li>
-                    • Developed reporting solutions and data analysis tools in
-                    C#/.NET
+                    • Developed web applications and data tools in C#/.NET
                   </li>
                   <li>
                     • Conducted requirements gathering through stakeholder
