@@ -22,7 +22,7 @@ const Portfolio = () => {
               Frontend Developer
             </h2>
             <h2 className="text-lg font-[200] lg:text-lg text-stone-400 pb-3 flex items-center gap-1">
-              <MapPin size="18" /> <span>Seattle, WA / Austin, TX </span>
+              <MapPin size="18" /> <span>Austin, TX </span>
             </h2>
             <TypingText />
           </div>
@@ -219,7 +219,7 @@ const Portfolio = () => {
                   "Data Visualization",
                   "Business Intelligence",
                 ]}
-                description="Analysis of 50,000 car sales records to identify depreciation patterns across brands, fuel types, and engine sizes. Debunked the 'luxury holds value' myth by showing mass market brands actually retain value better percentage-wise. Built comprehensive pivot tables and calculated depreciation rates to provide actionable buying strategies for consumers and dealers."
+                description="Wanted to dip my toes into some data analysis with this project. Analysis of 50,000 car sales records to identify depreciation patterns across brands, fuel types, and engine sizes. Debunked the 'luxury holds value' myth by showing mass market brands actually retain value better percentage-wise. Built comprehensive pivot tables and calculated depreciation rates to provide actionable buying strategies for consumers and dealers."
               />
               <Project
                 title="Ghibli Generator"
@@ -257,17 +257,17 @@ const Portfolio = () => {
             <h2 className="text-2xl font-bold mb-4 text-stone-100">About</h2>
             <div className="space-y-4">
               <p className="text-stone-400 leading-relaxed font-[600]">
-                Data Analyst transitioning from 7 years as a frontend developer.
-                After a while building web applications, I realized I was most
-                interested by the data-driven parts of my projects like
-                analyzing user behavior, building out performance metrics, and
-                creating visualizations. Now I'm applying those analytical
-                skills to help businesses make better decisions.
+                Frontend developer with 7 years of experience building
+                enterprise Angular applications. Most of my work has been
+                focused on data visualization and mapping platforms, creating
+                tools that help teams understand complex information. I enjoy
+                the technical challenges of building scalable applications and
+                working across teams to deliver solutions that make an impact.
               </p>
               <p className="text-stone-400 leading-relaxed font-[600]">
-                New to Seattle, and enjoying the beautiful PNW. In my free time,
-                I like to rock climb, drink coffee, and peruse the local vintage
-                and antique shops.
+                In my free time, I like to rock climb, do a little cooking,
+                drink tea, recently go birdwatching, and peruse the local
+                vintage and antique shops.
               </p>
               <p className="text-stone-400 leading-relaxed font-[600]">
                 Would love to connect about any opportunities, feel free to
