@@ -136,8 +136,7 @@ const Portfolio = () => {
                 <p className="text-stone-400 mt-4">
                   Developed enterprise web applications and data visualization
                   tools serving 500+ engineers. Worked primarily with Angular
-                  before transitioning to React, building mapping platforms and
-                  analytics dashboards.
+                  building mapping platforms and analytics dashboards.
                 </p>
 
                 <ul className="mt-4 space-y-2 text-stone-400">
@@ -209,17 +208,33 @@ const Portfolio = () => {
             <h2 className="text-2xl font-bold mb-6 text-stone-100">Projects</h2>
             <div className="space-y-6">
               <Project
-                title="Used Car Depreciation Analysis"
-                webLink="https://github.com/rschmidt6/Used-Car-Prices-Analysis"
-                webLinkText="See Analysis Markdown"
+                title="Travis County Birding"
+                webLink="https://travis-county-birding.vercel.app/"
+                githubLink="https://github.com/rschmidt6/birding-dashboard"
                 technologies={[
-                  "Google Sheets",
-                  "Pivot Tables",
-                  "Statistical Analysis",
-                  "Data Visualization",
-                  "Business Intelligence",
+                  "Angular 19",
+                  "TypeScript",
+                  "RxJS",
+                  "Leaflet",
+                  "eBird API",
                 ]}
-                description="Wanted to dip my toes into some data analysis with this project. Analysis of 50,000 car sales records to identify depreciation patterns across brands, fuel types, and engine sizes. Debunked the 'luxury holds value' myth by showing mass market brands actually retain value better percentage-wise. Built comprehensive pivot tables and calculated depreciation rates to provide actionable buying strategies for consumers and dealers."
+                description="A birding dashboard for Travis County, TX built with modern Angular. 
+                Features an interactive Leaflet map of recent notable sightings, a searchable species
+                 browser with per-species sighting maps, and a dashboard with live birding stats and recent 
+                 checklist activity. Uses Angular signals for reactive state management, lazy-loaded routes, 
+                 and the eBird API for real-time observation data. Desktop only for now."
+              />
+              <Project
+                title="Ascii Writing Tracker"
+                webLink="https://ascii-writing-tracker.vercel.app/"
+                githubLink="https://github.com/rschmidt6/ascii-writing-tracker"
+                technologies={["React", "Vite", "Tailwind"]}
+                description="I wanted to quickly
+                    make a really simple way to track my daily writing goal of 500
+                    words and then auto-date and format it and export as as a .txt
+                    for easy organization. I thought the ascii styling would be a
+                    fun way to make it more interesting and have a unique design,
+                    and I love the way it looks. Desktop only."
               />
               <Project
                 title="Ghibli Generator"
@@ -239,16 +254,17 @@ const Portfolio = () => {
                   a nice Ghibli theme and practice design."
               />
               <Project
-                title="Ascii Writing Tracker"
-                webLink="https://ascii-writing-tracker.vercel.app/"
-                githubLink="https://github.com/rschmidt6/ascii-writing-tracker"
-                technologies={["React", "Vite", "Tailwind"]}
-                description="I will admit not the most complex app, but I wanted to quickly
-                  make a really simple way to track my daily writing goal of 500
-                  words and then auto-date and format it and export as as a .txt
-                  for easy organization. I thought the ascii styling would be a
-                  fun way to make it more interesting and have a unique design,
-                  and I love the way it looks. Not responsive, desktop only."
+                title="Used Car Depreciation Analysis"
+                webLink="https://github.com/rschmidt6/Used-Car-Prices-Analysis"
+                webLinkText="See Analysis Markdown"
+                technologies={[
+                  "Google Sheets",
+                  "Pivot Tables",
+                  "Statistical Analysis",
+                  "Data Visualization",
+                  "Business Intelligence",
+                ]}
+                description="Wanted to dip my toes into some data analysis with this project. Analysis of 50,000 car sales records to identify depreciation patterns across brands, fuel types, and engine sizes. Debunked the 'luxury holds value' myth by showing mass market brands actually retain value better percentage-wise. Built comprehensive pivot tables and calculated depreciation rates to provide actionable buying strategies for consumers and dealers."
               />
             </div>
           </section>
@@ -256,7 +272,7 @@ const Portfolio = () => {
           <section>
             <h2 className="text-2xl font-bold mb-4 text-stone-100">About</h2>
             <div className="space-y-4">
-              <p className="text-stone-400 leading-relaxed font-[600]">
+              <p className="text-stone-400 leading-relaxed font-[400]">
                 Frontend developer with 7 years of experience building
                 enterprise Angular applications. Most of my work has been
                 focused on data visualization and mapping platforms, creating
@@ -264,18 +280,17 @@ const Portfolio = () => {
                 the technical challenges of building scalable applications and
                 working across teams to deliver solutions that make an impact.
               </p>
-              <p className="text-stone-400 leading-relaxed font-[600]">
-                In my free time, I like to rock climb, do a little cooking,
-                drink tea, recently go birdwatching, and peruse the local
-                vintage and antique shops.
+              <p className="text-stone-400 leading-relaxed font-[400]">
+                In my free time, I like to rock climb, look at birds, drink tea,
+                and peruse the local vintage and antique shops.
               </p>
-              <p className="text-stone-400 leading-relaxed font-[600]">
-                Would love to connect about any opportunities, feel free to
-                reach out directly over email or Linkedin!
+              <p className="text-stone-400 leading-relaxed font-[400]">
+                Feel free to reach out directly over email or Linkedin about any
+                inquiries!
               </p>
             </div>
           </section>
-          <section className="pb-20 text-stone-600 text-sm font-[200]">
+          <section className="pb-20 text-stone-400 text-sm font-[200]">
             <p>This site built with React, Tailwind, Framer Motion</p>
           </section>
         </div>
